@@ -1,4 +1,3 @@
-import com.sun.source.tree.Tree;
 
 import java.util.Arrays;
 
@@ -18,7 +17,7 @@ public class maximumJobs {
     public static int maxJobs(int[] duration, int[] deadline)
     {
         int[][] jobs = new int[duration.length][2];
-        int noOfJobs = 0, timeReq = 0;
+        int noOfJobs, timeReq = 0;
         TreeNode root = new TreeNode(0);
 
         for(int i = 0; i<duration.length; i++)
